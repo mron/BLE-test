@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>04068E72-EE0B-44B9-8196-3A5C293F95A8</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>04068E72-EE0B-44B9-8196-3A5C293F95A8.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BLE Test project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BLE Test</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build BLE Test</string>
+			<key>timeStartedRecording</key>
+			<real>655546597.20394099</real>
+			<key>timeStoppedRecording</key>
+			<real>655546597.26729202</real>
+			<key>title</key>
+			<string>Build BLE Test</string>
+			<key>uniqueIdentifier</key>
+			<string>04068E72-EE0B-44B9-8196-3A5C293F95A8</string>
+		</dict>
+		<key>0A5447F3-9774-40C7-9774-D7BA8A52ABFC</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0A5447F3-9774-40C7-9774-D7BA8A52ABFC.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BLE Test project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BLE Test</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build BLE Test</string>
+			<key>timeStartedRecording</key>
+			<real>655546135.36511099</real>
+			<key>timeStoppedRecording</key>
+			<real>655546135.44335997</real>
+			<key>title</key>
+			<string>Build BLE Test</string>
+			<key>uniqueIdentifier</key>
+			<string>0A5447F3-9774-40C7-9774-D7BA8A52ABFC</string>
+		</dict>
+		<key>403FC450-7773-4575-8695-4CC6B86B1041</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>403FC450-7773-4575-8695-4CC6B86B1041.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BLE Test project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BLE Test</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build BLE Test</string>
+			<key>timeStartedRecording</key>
+			<real>655546446.44837701</real>
+			<key>timeStoppedRecording</key>
+			<real>655546446.56677604</real>
+			<key>title</key>
+			<string>Build BLE Test</string>
+			<key>uniqueIdentifier</key>
+			<string>403FC450-7773-4575-8695-4CC6B86B1041</string>
+		</dict>
+		<key>69219425-1E88-473C-A805-074EA67F8FD6</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>69219425-1E88-473C-A805-074EA67F8FD6.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BLE Test project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BLE Test</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build BLE Test</string>
+			<key>timeStartedRecording</key>
+			<real>655546301.92699397</real>
+			<key>timeStoppedRecording</key>
+			<real>655546302.28780699</real>
+			<key>title</key>
+			<string>Build BLE Test</string>
+			<key>uniqueIdentifier</key>
+			<string>69219425-1E88-473C-A805-074EA67F8FD6</string>
+		</dict>
+		<key>AF7CD88B-A125-4B72-A353-4DE0C71D681D</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>AF7CD88B-A125-4B72-A353-4DE0C71D681D.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>BLE Test project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>BLE Test</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Build BLE Test</string>
+			<key>timeStartedRecording</key>
+			<real>655546555.783023</real>
+			<key>timeStoppedRecording</key>
+			<real>655546555.90295601</real>
+			<key>title</key>
+			<string>Build BLE Test</string>
+			<key>uniqueIdentifier</key>
+			<string>AF7CD88B-A125-4B72-A353-4DE0C71D681D</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

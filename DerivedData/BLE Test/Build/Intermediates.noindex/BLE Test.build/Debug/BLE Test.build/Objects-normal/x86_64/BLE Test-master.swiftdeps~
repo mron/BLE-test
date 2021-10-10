@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "7fa9a51d636bf7237c16b297ee0d1460"
+build_time: [1633851813, 89626000]
+inputs:
+  "/Users/ron/Programs/BLE Test/BLE Test/CentralViewController.swift": [1633851812, 983456696]
+  "/Users/ron/Programs/BLE Test/BLE Test/AppDelegate.swift": [1633791688, 946290500]
+  "/Users/ron/Programs/BLE Test/BLE Test/Services.swift": [1633833611, 338345576]

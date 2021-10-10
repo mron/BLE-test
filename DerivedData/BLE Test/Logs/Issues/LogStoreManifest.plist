@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>32BDC356-E7EC-4F05-9498-41F1A7B68DCE</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogMajorGroupSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.target.product-type.application</string>
+			<key>fileName</key>
+			<string>32BDC356-E7EC-4F05-9498-41F1A7B68DCE.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>signature</key>
+			<string>BLE_Test-azflmsspnqguixbpxhjioeiewarx</string>
+			<key>timeStartedRecording</key>
+			<real>655545955.20176494</real>
+			<key>timeStoppedRecording</key>
+			<real>655545957.83564103</real>
+			<key>title</key>
+			<string>Build target BLE Test</string>
+			<key>uniqueIdentifier</key>
+			<string>32BDC356-E7EC-4F05-9498-41F1A7B68DCE</string>
+		</dict>
+	</dict>
+	<key>preserveOldLogs</key>
+	<true/>
+</dict>
+</plist>
