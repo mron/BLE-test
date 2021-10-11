@@ -26,6 +26,9 @@ class CentralViewController: NSViewController {
     
     var data = Data()
     
+    // Read temperature timer
+    var tempReadTimer: Timer? = nil
+    
     override func viewDidLoad() {
         
         centralManager = CBCentralManager(delegate: self, queue: nil, options: [CBCentralManagerOptionShowPowerAlertKey: true])
@@ -83,6 +86,11 @@ class CentralViewController: NSViewController {
         // Don't do anything if we're not connected
         guard let discoveredPeripheral = discoveredPeripheral,
             case .connected = discoveredPeripheral.state else { return }
+        
+        if tempReadTimer != nil {
+            tempReadTimer?.invalidate()
+            tempReadTimer = nil
+        }
         
         for service in (discoveredPeripheral.services ?? [] as [CBService]) {
             for characteristic in (service.characteristics ?? [] as [CBCharacteristic]) {
@@ -202,6 +210,9 @@ extension CentralViewController: CBCentralManagerDelegate {
                 print("Discovered perhiperal not in expected range, at \(RSSI.intValue)" )
                 return
         }
+        for key in advertisementData.keys {
+           print("\(key)")
+        }
         
         print("Discovered \(String(describing: peripheral.name)) at \( RSSI.intValue )" )
         
@@ -247,12 +258,6 @@ extension CentralViewController: CBCentralManagerDelegate {
         
         // Search only for services that match our UUID
         peripheral.discoverServices( nil )
-        print( "discovered services: \(peripheral.services?.count)" )
-        //peripheral.discoverServices([EssServive.serviceUUID])
-
-//        if let EssTemperatureCharacteristic = EssTemperatureCharacteristic {
-//            peripheral.readValue( for: EssTemperatureCharacteristic )
-//        }
     }
     
     /*
@@ -295,13 +300,16 @@ extension CentralViewController: CBPeripheralDelegate {
             cleanup()
             return
         }
+
+        print( "discovered services: \(peripheral.services?.count)" )
         
         // Discover the characteristic we want...
         
         // Loop through the newly filled peripheral.services array, just in case there's more than one.
         guard let peripheralServices = peripheral.services else { return }
         for service in peripheralServices {
-            peripheral.discoverCharacteristics([TransferService.characteristicUUID], for: service)
+            //peripheral.discoverCharacteristics([TransferService.characteristicUUID], for: service)
+            peripheral.discoverCharacteristics([], for: service)
         }
     }
     
@@ -331,6 +339,12 @@ extension CentralViewController: CBPeripheralDelegate {
                 // If it is, subscribe to it
                 EssTemperatureCharacteristic = characteristic
                 //peripheral.setNotifyValue(true, for: characteristic)
+                readValue(characteristic: EssTemperatureCharacteristic! )
+                if tempReadTimer == nil {
+                    tempReadTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { timer in
+                        self.readValue(characteristic: self.EssTemperatureCharacteristic! )
+                    }
+                }
             }
         }
         
@@ -350,26 +364,26 @@ extension CentralViewController: CBPeripheralDelegate {
         
         guard let characteristicData = characteristic.value,
             let stringFromData = String(data: characteristicData, encoding: .utf8) else { return }
-        
-        print("Received %d bytes: %s", characteristicData.count, stringFromData)
-        
-        // Have we received the end-of-message token?
-        if stringFromData == "EOM" {
-            // End-of-message case: show the data.
-            // Dispatch the text view update to the main queue for updating the UI, because
-            // we don't know which thread this method will be called back on.
-            DispatchQueue.main.async() {
-                self.textView.string = String(data: self.data, encoding: .utf8) ?? "No Value"
-            }
-            
-            // Write test data
-            writeData()
-        } else {
-            // Otherwise, just append the data to what we have previously received.
-            data.append(characteristicData)
-        }
+        let x = characteristicData.withUnsafeBytes({
+            (rawPtr: UnsafeRawBufferPointer) in
+                return rawPtr.load(as: Int16.self)
+            })
+        print("Received \(characteristicData.count) bytes: \(x)")
     }
-
+    //
+    //    // In CBPeripheralDelegate class/extension
+    //    func peripheral(_ peripheral: CBPeripheral, didUpdateValueFor characteristic: CBCharacteristic, error: Error?) {
+    //        if let error = error {
+    //            // Handle error
+    //            return
+    //        }
+    //        guard let value = characteristic.value else {
+    //            return
+    //        }
+    //        // Do something with data
+    //    }
+        
+    
     /*
      *  The peripheral letting us know whether our subscribe/unsubscribe happened or not
      */
@@ -402,6 +416,9 @@ extension CentralViewController: CBPeripheralDelegate {
         writeData()
     }
     
+    func readValue(characteristic: CBCharacteristic) {
+            self.discoveredPeripheral?.readValue(for: characteristic  )
+    }
 }
 
 

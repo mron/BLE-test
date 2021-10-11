@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E463ED602713B234001DB3DB /* printBLEAdvertisement.swift in Sources */ = {isa = PBXBuildFile; fileRef = E463ED5F2713B234001DB3DB /* printBLEAdvertisement.swift */; };
 		E4B602CD2711E6480065F8A1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B602CC2711E6480065F8A1 /* AppDelegate.swift */; };
 		E4B602CF2711E6480065F8A1 /* CentralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4B602CE2711E6480065F8A1 /* CentralViewController.swift */; };
 		E4B602D22711E6480065F8A1 /* BLE_Test.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4B602D02711E6480065F8A1 /* BLE_Test.xcdatamodeld */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E463ED5F2713B234001DB3DB /* printBLEAdvertisement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = printBLEAdvertisement.swift; sourceTree = "<group>"; };
 		E4B602C92711E6480065F8A1 /* BLE Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BLE Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4B602CC2711E6480065F8A1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4B602CE2711E6480065F8A1 /* CentralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralViewController.swift; sourceTree = "<group>"; };
@@ -41,6 +43,7 @@
 		E4B602C02711E6480065F8A1 = {
 			isa = PBXGroup;
 			children = (
+				E463ED5F2713B234001DB3DB /* printBLEAdvertisement.swift */,
 				E4B602CB2711E6480065F8A1 /* BLE Test */,
 				E4B602CA2711E6480065F8A1 /* Products */,
 			);
@@ -141,6 +144,7 @@
 			files = (
 				E4B602D22711E6480065F8A1 /* BLE_Test.xcdatamodeld in Sources */,
 				E4B602CF2711E6480065F8A1 /* CentralViewController.swift in Sources */,
+				E463ED602713B234001DB3DB /* printBLEAdvertisement.swift in Sources */,
 				E4B602CD2711E6480065F8A1 /* AppDelegate.swift in Sources */,
 				E4B602E02711E7DF0065F8A1 /* Services.swift in Sources */,
 			);
